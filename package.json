@@ -83,7 +83,7 @@
     "prepush": "npm run test",
     "pretest": "npm run build",
     "providers": "babel-node ./src/index.js --providers",
-    "start": "cross-env NODE_ENV=production node ./build/popcorn-api.js",
+    "start": "cross-env NODE_ENV=production node ./build/popcorn-api.js -m pretty",
     "test": "npm run test-dredd && npm run test-mocha",
     "test-dredd": "cross-env NODE_ENV=test babel-node ./node_modules/dredd/bin/dredd",
     "test-mocha": "cross-env NODE_ENV=test nyc -r=lcov -r=text mocha --exit --recursive --timeout 10000"

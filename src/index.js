@@ -55,7 +55,7 @@ import {
     ])
 
     // TODO: make scraping start wth 'start' param in 'init'.
-    if (isMaster && PopApi.startScraper) {
+    if ((isMaster && PopApi.startScraper) || process.env.FORCE_SCRAPE) {
       PopApi.scraper.scrape()
     }
   } catch (err) {
