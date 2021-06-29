@@ -24,12 +24,12 @@ const maxWebRequests: number = 2
  * @type {Array<Object>}
  */
 export default [{
-  Provider: BulkProvider,
-  args: {
-    maxWebRequests,
-    configs: bulkConfigs
-  }
-}, {
+//   Provider: BulkProvider,
+//   args: {
+//     maxWebRequests,
+//     configs: bulkConfigs
+//   }
+// }, {
   Provider: MovieProvider,
   args: {
     maxWebRequests,
