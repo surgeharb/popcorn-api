@@ -1,15 +1,15 @@
 // Import the necessary modules.
 // @flow
 import {
-  bulkConfigs,
-  movieConfigs,
-  showConfigs,
+  // bulkConfigs,
+  // movieConfigs,
+  // showConfigs,
   ytsConfigs
 } from './configs'
 import {
-  BulkProvider,
-  MovieProvider,
-  ShowProvider,
+  // BulkProvider,
+  // MovieProvider,
+  // ShowProvider,
   YtsProvider
 } from './providers'
 
@@ -30,18 +30,18 @@ export default [{
 //     configs: bulkConfigs
 //   }
 // }, {
-  Provider: MovieProvider,
-  args: {
-    maxWebRequests,
-    configs: movieConfigs
-  }
-}, {
-  Provider: ShowProvider,
-  args: {
-    maxWebRequests,
-    configs: showConfigs
-  }
-}, {
+//   Provider: MovieProvider,
+//   args: {
+//     maxWebRequests,
+//     configs: movieConfigs
+//   }
+// }, {
+//   Provider: ShowProvider,
+//   args: {
+//     maxWebRequests,
+//     configs: showConfigs
+//   }
+// }, {
   Provider: YtsProvider,
   args: {
     maxWebRequests,
