@@ -1,15 +1,15 @@
 // Import the necessary modules.
 // @flow
 import {
-  // bulkConfigs,
-  // movieConfigs,
-  // showConfigs,
+  bulkConfigs,
+  movieConfigs,
+  showConfigs,
   ytsConfigs
 } from './configs'
 import {
-  // BulkProvider,
-  // MovieProvider,
-  // ShowProvider,
+  BulkProvider,
+  MovieProvider,
+  ShowProvider,
   YtsProvider
 } from './providers'
 
@@ -23,33 +23,25 @@ const maxWebRequests: number = 2
  * Export the providers to be attached to the PopApiScraper.
  * @type {Array<Object>}
  */
-// export default [{
-//   Provider: BulkProvider,
-//   args: {
-//     maxWebRequests,
-//     configs: bulkConfigs
-//   }
-// }, {
-//   Provider: MovieProvider,
-//   args: {
-//     maxWebRequests,
-//     configs: movieConfigs
-//   }
-// }, {
-//   Provider: ShowProvider,
-//   args: {
-//     maxWebRequests,
-//     configs: showConfigs
-//   }
-// }, {
-//   Provider: YtsProvider,
-//   args: {
-//     maxWebRequests,
-//     configs: ytsConfigs
-//   }
-// }]
-
 export default [{
+  Provider: BulkProvider,
+  args: {
+    maxWebRequests,
+    configs: bulkConfigs
+  }
+}, {
+  Provider: MovieProvider,
+  args: {
+    maxWebRequests,
+    configs: movieConfigs
+  }
+}, {
+  Provider: ShowProvider,
+  args: {
+    maxWebRequests,
+    configs: showConfigs
+  }
+}, {
   Provider: YtsProvider,
   args: {
     maxWebRequests,
