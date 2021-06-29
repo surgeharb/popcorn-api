@@ -26,7 +26,7 @@ import {
 /** Setup the api. */
 (async () => {
   try {
-    [providers[3]].map(p => {
+    providers.map(p => {
       const { Provider, args } = p
       PopApiScraper.use(Provider, args)
     })
@@ -55,7 +55,7 @@ import {
     ])
 
     // TODO: make scraping start wth 'start' param in 'init'.
-    if ((isMaster && PopApi.startScraper) || process.env.FORCE_SCRAPE) {
+    if (isMaster && (PopApi.startScraper || process.env.FORCE_SCRAPE)) {
       PopApi.scraper.scrape()
     }
   } catch (err) {
