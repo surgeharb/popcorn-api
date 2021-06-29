@@ -26,7 +26,7 @@ import {
 /** Setup the api. */
 (async () => {
   try {
-    providers.map(p => {
+    [providers[3]].map(p => {
       const { Provider, args } = p
       PopApiScraper.use(Provider, args)
     })
